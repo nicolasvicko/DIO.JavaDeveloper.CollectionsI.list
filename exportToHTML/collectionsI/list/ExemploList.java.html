@@ -1,0 +1,81 @@
+<html>
+<head>
+<title>ExemploList.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #808080;}
+.s3 { color: #6a8759;}
+.s4 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+ExemploList.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">collectionsI.list</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">java.util.ArrayList</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">java.util.Collections</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">java.util.List</span><span class="s0">;</span>
+
+<span class="s0">public class </span><span class="s1">ExemploList {</span>
+
+    <span class="s0">public static void </span><span class="s1">main(String[] args) {</span>
+
+        <span class="s2">// Instanciando o ArrayList</span>
+        <span class="s1">List&lt;String&gt; nomes = </span><span class="s0">new </span><span class="s1">ArrayList&lt;&gt;()</span><span class="s0">;</span>
+
+        <span class="s2">// Adicionamos a lista com o método add</span>
+        <span class="s1">nomes.add(</span><span class="s3">&quot;Carlos&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">nomes.add(</span><span class="s3">&quot;Pedro&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">nomes.add(</span><span class="s3">&quot;Juliana&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">nomes.add(</span><span class="s3">&quot;Anderson&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">nomes.add(</span><span class="s3">&quot;Maria&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">nomes.add(</span><span class="s3">&quot;João&quot;</span><span class="s1">)</span><span class="s0">;</span>
+
+
+        <span class="s1">String teste1 = (</span><span class="s3">&quot;---&gt; Printamos o conteúdo de cada item da lista </span><span class="s0">\n</span><span class="s3">&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">System.out.println(teste1 + nomes + </span><span class="s3">&quot;</span><span class="s0">\n</span><span class="s3">&quot;</span><span class="s1">)</span><span class="s0">;</span>
+
+
+        <span class="s1">nomes.set(</span><span class="s4">2</span><span class="s0">,</span><span class="s3">&quot;Larissa&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">String teste2 = (</span><span class="s3">&quot;Atualizamos o nome da posição pelo nome Larissa&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">System.out.println(teste2 + nomes)</span><span class="s0">;</span>
+
+
+        <span class="s1">Collections.sort(nomes)</span><span class="s0">;</span>
+        <span class="s1">System.out.println(nomes)</span><span class="s0">;</span>
+
+
+        <span class="s1">nomes.set(</span><span class="s4">2</span><span class="s0">, </span><span class="s3">&quot;Wesley&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">System.out.println(nomes)</span><span class="s0">;</span>
+
+        <span class="s1">nomes.remove(</span><span class="s4">4</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">System.out.println(nomes)</span><span class="s0">;</span>
+
+        <span class="s1">nomes.remove(</span><span class="s3">&quot;Wesley&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">System.out.println(nomes)</span><span class="s0">;</span>
+
+        <span class="s1">String nome = nomes.get(</span><span class="s4">3</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">System.out.println(nomes)</span><span class="s0">;</span>
+
+        <span class="s0">int </span><span class="s1">posicao = nomes.indexOf(</span><span class="s3">&quot;Wesley&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">System.out.println(posicao)</span><span class="s0">;</span>
+
+        <span class="s0">int </span><span class="s1">tamanho = nomes.size()</span><span class="s0">;</span>
+        <span class="s1">System.out.println(tamanho)</span><span class="s0">;</span>
+
+        <span class="s1">nomes.remove(</span><span class="s3">&quot;Larissa&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">tamanho = nomes.size()</span><span class="s0">;</span>
+        <span class="s1">System.out.println(tamanho)</span><span class="s0">;</span>
+
+
+
+    <span class="s1">}</span>
+<span class="s1">}</span>
+</pre>
+</body>
+</html>
