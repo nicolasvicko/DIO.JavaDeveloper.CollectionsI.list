@@ -23,95 +23,95 @@ public class ExemploList {
 
         // Agora vamos fazer alguns testes
             var pulaLinha = "\n";
-            String teste1 = ("---> Printamos os itens da lista nomes: " + pulaLinha);
-            System.out.println(teste1 + nomes + pulaLinha);
+            String testeA = ("---> Printamos os itens da lista nomes: " + pulaLinha);
+            System.out.println(testeA + nomes + pulaLinha);
 
 
         //Trocando o conteúdo do item 2
-            String teste2 = ("---> Trocando o conteúdo do item 2 da lista nomes pelo conteúdo 'Larissa': " + pulaLinha);
+            String testeB = ("---> Trocando o conteúdo do item 2 da lista nomes pelo conteúdo 'Larissa': " + pulaLinha);
             nomes.set(2,"Larissa");
-            System.out.println(teste2 + nomes + pulaLinha);
+            System.out.println(testeB + nomes + pulaLinha);
 
 
         //Organizando a lista e ordem alfabética
-            String teste3 = ("---> Organizando os itens da lista nomes em ordem alfabética:" + pulaLinha);
+            String testeC = ("---> Organizando os itens da lista nomes em ordem alfabética:" + pulaLinha);
             Collections.sort(nomes);
-            System.out.println(teste3 + nomes + pulaLinha);
+            System.out.println(testeC + nomes + pulaLinha);
 
 
         //Trocando o conteúdo
-            String teste4 = ("---> Trocando o conteúdo do item 2 pelo conteúdo 'Wesley':" + pulaLinha);
+            String testeD = ("---> Trocando o conteúdo do item 2 pelo conteúdo 'Wesley':" + pulaLinha);
             nomes.set(2, "Wesley");
-            System.out.println(teste4 + nomes + pulaLinha);
+            System.out.println(testeD + nomes + pulaLinha);
 
 
         //Removendo o item 4
-            String teste5 = ("---> Removendo o item 4 da lista nomes:" + pulaLinha);
+            String testeE = ("---> Removendo o item 4 da lista nomes:" + pulaLinha);
             nomes.remove(4);
-            System.out.println(teste5 + nomes + pulaLinha);
+            System.out.println(testeE + nomes + pulaLinha);
 
 
        //Removendo Wesley
-            String teste6 = ("---> Removendo o primeiro item 'Wesley' da lista nomes:" + pulaLinha);
+            String testeF = ("---> Removendo o primeiro item 'Wesley' da lista nomes:" + pulaLinha);
             nomes.remove("Wesley"); // Percebi queremove apenas o primeiro item com o conteúdo Wesley
-            System.out.println(teste6 + nomes +  pulaLinha);
+            System.out.println(testeF + nomes +  pulaLinha);
 
 
         //Para remover todos os atributos com o valor Wesley:
-            String teste7 = ("---> Usando 'if' para remover todos os itens contendo 'Wesley' como conteúdo..." + pulaLinha);
+            String testeG = ("---> Usando 'if' para remover todos os itens contendo 'Wesley' como conteúdo..." + pulaLinha);
             boolean temWesley = nomes.contains("Wesley");
             if (temWesley = true); nomes.remove("Wesley");
-            System.out.println(teste7 + nomes + pulaLinha);
+            System.out.println(testeG + nomes + pulaLinha);
 
 
         //Quem está no item 3?
-            String teste8 = ("---> Solicitando apenas o conteúdo do item 3:" + pulaLinha);
+            String testeH = ("---> Solicitando apenas o conteúdo do item 3:" + pulaLinha);
             String atributo3 = nomes.get(3);
-            System.out.println(teste8 + atributo3 + pulaLinha);
+            System.out.println(testeH + atributo3 + pulaLinha);
 
 
         //onde está Pedro?
-            String teste9 = ("---> Solicitando o index(posicao) do item 'Pedro'" + pulaLinha);
+            String testeI = ("---> Solicitando o index(posicao) do item 'Pedro'" + pulaLinha);
             int posicao = nomes.indexOf("Pedro");
-            System.out.println(teste9 + posicao + pulaLinha);
+            System.out.println(testeI + posicao + pulaLinha);
 
 
         //Quantidade de itens da lista
-            String teste10 =("---> Contando os itens da lista 'nomes': " + pulaLinha);
+            String testeJ =("---> Contando os itens da lista 'nomes': " + pulaLinha);
             int tamanhoDaLista = nomes.size();
-            System.out.println(teste10 + "Até esta linha, a lista 'nomes' tem um total de " + tamanhoDaLista + " itens, que são esses: " + pulaLinha + nomes + pulaLinha);
+            System.out.println(testeJ + "Até esta linha, a lista 'nomes' tem um total de " + tamanhoDaLista + " itens, que são esses: " + pulaLinha + nomes + pulaLinha);
 
 
 
         //Agora tiramos o item 'Larissa'
-            String teste11 = ("---> Tamanho da lista depois de tirar o item de conteúdo 'Larissa' é: " + pulaLinha);
+            String testeK = ("---> Tamanho da lista depois de tirar o item de conteúdo 'Larissa' é: " + pulaLinha);
             nomes.remove("Larissa");
             int tamanhoDaListanova = nomes.size();
-            System.out.println(teste11 + tamanhoDaListanova + pulaLinha);
+            System.out.println(testeK + tamanhoDaListanova + pulaLinha);
 
 
 
         //Procurando o atributo anderson e mostrando sua posição na lista
-            String teste12 = ("---> Checando se existe o conteúdo 'Anderson' em algum item: " + pulaLinha);
+            String testeL = ("---> Checando se existe o conteúdo 'Anderson' em algum item: " + pulaLinha);
             boolean achaAnderson = nomes.contains("Anderson");
             String temAnderson = ("Sim, tem o conteúdo Anderson na lista e está no item: ");
             if (achaAnderson); int posicaoAnderson = nomes.indexOf("Anderson");
-            System.out.println(teste12 + temAnderson + posicao + pulaLinha);
+            System.out.println(testeL + temAnderson + posicao + pulaLinha);
 
 
 
         // Procurando o Atributo Fernando e mostrando sua posição na lista
-            String teste13 = ("---> Agora estamos procurando o conteúdo 'Fernando': " + pulaLinha);
+            String testeM = ("---> Agora estamos procurando o conteúdo 'Fernando': " + pulaLinha);
             boolean achaFernando = nomes.contains("Fernando");
             String temFernando = ("Sim, tem o conteúdo Fernando na lista e está na no item: ");
             if (achaFernando); int posicaoFernando = nomes.indexOf("Fernando");
-            System.out.println(teste13 + temFernando + posicao + pulaLinha);
+            System.out.println(testeM + temFernando + posicao + pulaLinha);
 
 
 
         // Verificando se a lista está vazia
-            String teste14 = ("---> A lista 'nomes' ainda tem itens?");
-            System.out.println(teste14);
+            String testeN = ("---> A lista 'nomes' ainda tem itens?");
+            System.out.println(testeN);
             boolean listaEstaVazia = nomes.isEmpty();
             if(listaEstaVazia);
             System.out.println("Sim, a lista ainda tem os itens:" + pulaLinha + nomes + pulaLinha);
@@ -126,18 +126,18 @@ public class ExemploList {
 
 
         //Retorna um booleano True sempre que existir mais um elemento na lista
-            String teste16 = (pulaLinha + "Retornado um booleano True sempre que tiver mais um item na lista e mostrando seu conteúdo" + pulaLinha);
+            String testeO = (pulaLinha + "Retornado um booleano True sempre que tiver mais um item na lista e mostrando seu conteúdo" + pulaLinha);
             Iterator<String> Iterator = nomes.iterator();
-            while (Iterator.hasNext()) {System.out.println(teste16 + "--->" + Iterator.next());
+            while (Iterator.hasNext()) {System.out.println(testeO + "--->" + Iterator.next());
             }
 
 
         //Limpando todos os atributos do objeto e verificando se está limpo
-            String teste17 = ("Limpando todos os itens do objeto e verificando se está vazio:" + pulaLinha);
+            String testeP = ("Limpando todos os itens do objeto e verificando se está vazio:" + pulaLinha);
             nomes.clear();
             boolean listaLimpa = nomes.isEmpty();
             if (listaLimpa);
-            System.out.println(teste17 + "Sim, agora a lista está sem nenhum item..." + pulaLinha);
+            System.out.println(testeP + "Sim, agora a lista está sem nenhum item..." + pulaLinha);
 
 
 
