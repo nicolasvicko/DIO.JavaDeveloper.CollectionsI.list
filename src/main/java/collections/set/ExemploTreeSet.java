@@ -1,4 +1,4 @@
-package Collections.Set;
+package collections.set;
 
 import java.util.TreeSet;
 

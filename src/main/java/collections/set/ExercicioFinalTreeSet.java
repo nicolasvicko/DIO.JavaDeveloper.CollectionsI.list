@@ -1,4 +1,4 @@
-package Collections.Set.ExercioFinalSet;
+package collections.set;
 
 import java.util.Iterator;
 import java.util.TreeSet;
