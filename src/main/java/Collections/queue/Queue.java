@@ -2,12 +2,12 @@ package Collections.queue;
 
 import java.util.Iterator;
 import java.util.LinkedList;
-import java.util.Queue;
 
-public class queue {
+public class Queue {
     public static void main(String[] args) {
 
-        Queue<String> filadeBanco = new LinkedList<>();
+        java.util.Queue<String> filadeBanco = new LinkedList<>();
+        //Queue<String> filadeBanco = new LinkedList<>();
 
         filadeBanco.add("Patrícia");
         filadeBanco.add("Roberto");
@@ -61,6 +61,17 @@ public class queue {
             while (iteratorFilaBanco.hasNext()){
                 System.out.println("Cliente: " + iteratorFilaBanco.next());
             }
+
+        //Descobrindo a quantidade de clientes na fila
+            String testeF = (pulaLinha + "Quantos clientes estão na fila?" + pulaLinha);
+            int quantosNaFila = filadeBanco.size();
+            System.out.println(testeF + quantosNaFila + pulaLinha);
+
+
+        //A fila está vazia?
+            String testeG = ("A fila está vazia?"+pulaLinha);
+            boolean filaVazia =  filadeBanco.isEmpty();
+            if (!filaVazia); System.out.println(testeG + "Não, ainda tem os clientes:" + filadeBanco);
 
     }
 }
