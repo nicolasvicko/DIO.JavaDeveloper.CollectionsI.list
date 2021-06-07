@@ -23,45 +23,45 @@ public class ExemploList {
 
         // Agora vamos fazer alguns testes
             var pulaLinha = "\n";
-            String mensagemteste1 = ("---> Printamos os itens da lista nomes: " + pulaLinha);
-            System.out.println(mensagemteste1 + nomes + pulaLinha);
+            String teste1 = ("---> Printamos os itens da lista nomes: " + pulaLinha);
+            System.out.println(teste1 + nomes + pulaLinha);
 
 
         //Trocando o conteúdo do item 2
-            String mensagemteste2 = ("---> Trocando o conteúdo do item 2 da lista nomes pelo conteúdo 'Larissa': " + pulaLinha);
+            String teste2 = ("---> Trocando o conteúdo do item 2 da lista nomes pelo conteúdo 'Larissa': " + pulaLinha);
             nomes.set(2,"Larissa");
-            System.out.println(mensagemteste2 + nomes + pulaLinha);
+            System.out.println(teste2 + nomes + pulaLinha);
 
 
         //Organizando a lista e ordem alfabética
-            String mensagemteste3 = ("---> Organizando os itens da lista nomes em ordem alfabética:" + pulaLinha);
+            String teste3 = ("---> Organizando os itens da lista nomes em ordem alfabética:" + pulaLinha);
             Collections.sort(nomes);
-            System.out.println(mensagemteste3 + nomes + pulaLinha);
+            System.out.println(teste3 + nomes + pulaLinha);
 
 
         //Trocando o conteúdo
-            String mensagemteste4 = ("---> Trocando o conteúdo do item 2 pelo conteúdo 'Wesley':" + pulaLinha);
+            String teste4 = ("---> Trocando o conteúdo do item 2 pelo conteúdo 'Wesley':" + pulaLinha);
             nomes.set(2, "Wesley");
-            System.out.println(mensagemteste4 + nomes + pulaLinha);
+            System.out.println(teste4 + nomes + pulaLinha);
 
 
         //Removendo o item 4
-            String mensagemteste5 = ("---> Removendo o item 4 da lista nomes:" + pulaLinha);
+            String teste5 = ("---> Removendo o item 4 da lista nomes:" + pulaLinha);
             nomes.remove(4);
-            System.out.println(mensagemteste5 + nomes + pulaLinha);
+            System.out.println(teste5 + nomes + pulaLinha);
 
 
        //Removendo Wesley
-            String mensagemteste6 = ("---> Removendo o primeiro item 'Wesley' da lista nomes:" + pulaLinha);
+            String teste6 = ("---> Removendo o primeiro item 'Wesley' da lista nomes:" + pulaLinha);
             nomes.remove("Wesley"); // Percebi queremove apenas o primeiro item com o conteúdo Wesley
-            System.out.println(mensagemteste6 + nomes +  pulaLinha);
+            System.out.println(teste6 + nomes +  pulaLinha);
 
 
         //Para remover todos os atributos com o valor Wesley:
-            String mensagemteste7 = ("---> Usando 'if' para remover todos os itens contendo 'Wesley' como conteúdo..." + pulaLinha);
+            String teste7 = ("---> Usando 'if' para remover todos os itens contendo 'Wesley' como conteúdo..." + pulaLinha);
             boolean temWesley = nomes.contains("Wesley");
             if (temWesley = true); nomes.remove("Wesley");
-            System.out.println(mensagemteste7 + nomes + pulaLinha);
+            System.out.println(teste7 + nomes + pulaLinha);
 
 
         //Quem está no item 3?
